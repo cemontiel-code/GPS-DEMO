@@ -1,4 +1,4 @@
-import "./app.css";
+import "./App.css";
 import Component from "./Component";
 import Hero from "./Hero";
 import React, { useState, useEffect } from "react";
