@@ -1,6 +1,6 @@
 import "./app.css";
 import Component from "./Component";
-import Hero from "./hero";
+import Hero from "./Hero";
 import React, { useState, useEffect } from "react";
 import Records from "./data/Us.json";
 import ServiceList from "./data/servcices.json";
@@ -131,7 +131,7 @@ function App() {
             Lista de Servicios.
           </h3>
 
-          <div className="mx-auto my-auto text-center grid grid-cols-5 gap-14">
+          <div className="mx-auto my-auto text-center grid grid-cols-2 gap-4">
             {TechList &&
               TechList.map((data, x) => {
                 return (
