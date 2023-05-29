@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsChevronDoubleLeft } from "react-icons/bs";
-import "./app.css";
+import "./App.css";
 
 function Component({ children, icon, color, desc, imgUrl, title }) {
   const [active, setActive] = useState(false);
