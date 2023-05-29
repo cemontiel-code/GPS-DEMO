@@ -128,7 +128,7 @@ function App() {
           className="container gap-10 sm:w-3/4 min-h-screen flex flex-col items-center p-5 mx-auto h-full bg-white"
         >
           <h3 className="text-center text-ellipsis text-3xl font-bold my-auto mx-auto">
-            Lista de Servicios.
+            tecnologias a nuestra disposicion 
           </h3>
 
           <div className="mx-auto my-auto text-center grid grid-cols-2 gap-4">
