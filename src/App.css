@@ -1,16 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-  scroll-behavior: smooth;
-}
-.logoText{
-  font-family: 'Satisfy', cursive, 'Courier New', Courier, monospace;
+:root{
+  --s: 100px; /* size  */
+  --m: 4px; /* margin */
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
 
-.anime {  transition: all 580ms cubic-bezier(0.215, 0.610, 0.355, 1);
+body {
+  scroll-behavior: smooth;
+}
+.logoText {
+  font-family: "Satisfy", cursive, "Courier New", Courier, monospace;
+}
+
+.anime {
+  transition: all 480ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .open {
@@ -22,19 +29,11 @@ body{
   border-radius: 0%;
 }
 
-.closed{
+.closed {
   width: 0%;
   height: 0%;
   position: relative;
 }
-
-/*
-.btn-anim{
-  visibility: hidden;
-  animation: animBtn 300ms linear forwards;
-}
-
- */
 #sineWave {
   animation: pathAnim 13s linear infinite;
 }

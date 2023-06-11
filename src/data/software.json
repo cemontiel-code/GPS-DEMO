@@ -1,0 +1,22 @@
+[
+  { "id": "0", "name": "Sistema de software de navegación HYDRO PRO" },
+  { "id": "1", "name": "SURFER 8" },
+  { "id": "2", "name": "Global Mapper 8" },
+  { "id": "3", "name": "AutoCad" },
+  { "id": "4", "name": "Trimble Geomatics Office" },
+  { "id": "5", "name": "GPS PathfinderOffice 2.8." },
+  { "id": "6", "name": "GeoGraphic Calculator" },
+  { "id": "7", "name": "Side Scan Sonar TRITONISIS V.5.75" },
+  { "id": "8", "name": "DELPHMAP V.2.80" },
+  { "id": "9", "name": "Adquisión y procesamiento de subBottom - DELPSEISMIC" },
+  { "id": "10", "name": "Medicicon Magnetómetro MAGLOG" },
+  {
+    "id": "11",
+    "name": "Procesamiento de data del Magnetómetro - MAGMAP 2000"
+  },
+  { "id": "12", "name": "GEODVEN V.1.6" },
+  {
+    "id": "13",
+    "name": "Corrientímetro: Software de comunicación y procesamiento"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "title": "SERVICIOS DE LEVANTAMIENTOS CON LASER SCANNER Y TECNICAS LIDAR",
+  "concept": "En la oportunidad la empresa Gerencia de Proyectos y servicios CA ( GPS CA ), que nos hemos desempeñado desde hace mas de 25 anos en Geodesia, Topografía moderna y Clásica, Geofísica e Hidrografía, recientemente ha ampliado su cartera de servicios, introduciendo sistemas de levantamientos con Scanner Laser.Ofrecemos a nuestros clientes una opción modernas, precisas y eficiente a bajo costo y con todas las bondades que estos servicios representan.",
+  "desc": "Gerencia de Proyectos y servicios CA ( GPS CA ), la tecnología que estamos empleando para los levantamientos en modalidad 3D solo se logra con equipo Scanner o LIDAR.Es el uso de sistemas scanner y lidar (Light Detection and Ranging), Basados en la detección remota usando un laser clase 3 para medir distancias a objetivos seleccionados o a estudiar. Los sistemas de mapeo 3D utilizan esta tecnología para crear imágenes 3D de un área, también se están utilizando en una variedad de industrias. Modelo Software Informe",
+  "equip": [
+    {
+      "concept": "Los instrumentos de tecnología empleados para tal fin, lo  podemos  describir a continuación, y su uso dependerá de las exigencias de precisión de dificultad etc, cada proyecto y solicitud del cliente.",
+      "items": [
+        { "id": "0", "name": "LASER ESTACIÓN SCANNER", "imgURL": "" },
+        { "id": "1", "name": "SLAM SCANNER", "imgURL": "" },
+        { "id": "2", "name": "DRON M300 CON LIDAR ", "imgURL": "" }
+      ]
+    }
+  ],
+  "capture": "Una de las ventajas es el alto rendimiento que estas tecnologías y sistemas y la captura de datos  ser muy eficiente y no deja espacios sin levantar, ya que mapea toda el área previamente planificada, tanto par5a el scanner como para los levantamiento con LIDAR y/o empleando Drones",
+  "capture2": "La captura de datos de digitalización puede ser empleada en espacios reducidos. Levantamientos de tubería pueden tener un gran resultado en entornos de producción complejas, la planificación y diseño 3D, permite que no existan alteraciones, dudas o errores y reflejar los resultados reales, y que esta sea tan eficiente como se posible, por ejemplo las tuberías pueden ser de color de acuerdo a su uso",
+  "proccess": "El scaneo genera una nube de Puntos, tal como se refleja a continuación, tanto para levantamientos de Scanner como en LIDAR levantados con dron se desplego una nube de puntos que describe el dimensionamiento en 3D",
+  "ventajas": ""
+}
