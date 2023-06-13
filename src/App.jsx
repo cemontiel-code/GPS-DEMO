@@ -1,18 +1,20 @@
+import React, { useEffect, useState } from "react";
+import { FadeIn } from "react-slide-fade-in";
 import "./App.css";
 import Component from "./Component";
 import Hero from "./Hero";
-import React, { useState, useEffect } from "react";
-import { FadeIn } from "react-slide-fade-in";
 
 import Records from "./data/Us.json";
+import ProyectList from "./data/data.json";
 import ServiceList from "./data/servcices.json";
+import SoftList from "./data/software.json";
 import TechList from "./data/tech.json";
+import allies from "./data/allies.json";
 
-import { IoMdBusiness } from "react-icons/io";
-import { MdMiscellaneousServices as Techno } from "react-icons/md";
 import { BsWater as Hidrografia } from "react-icons/bs";
-import { RiGpsLine as Topografia } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
+import { MdMiscellaneousServices as Techno } from "react-icons/md";
+import { data } from "autoprefixer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -39,7 +41,7 @@ function App() {
 
       <svg
         viewBox="0 0 1320 300"
-        className="w-full h-full sm:h-4/5 fixed bottom-0 -z-50  "
+        className="hidden sm:block w-full h-full sm:h-4/5 fixed bottom-0 -z-50  "
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
@@ -160,7 +162,7 @@ function App() {
           <div>
             <div className="mx-auto my-auto  grid  sm:grid-cols-2 gap-4">
               {ServiceList &&
-                ServiceList.map((data, x) => {
+                ServiceList.map((data) => {
                   return (
                     <Component
                       icon={<Hidrografia size={"48px"} />}
@@ -186,8 +188,8 @@ function App() {
         </section>
         <div className="divider mt-10"> .</div>
         <section
-          id="proyects"
-          aria-label="lista de projectos"
+          id="equip"
+          aria-label="lista de equipos "
           className="container gap-15 min-h-screen flex flex-col items-center p-4 sm:p-10 mx-auto h-full justify-around"
         >
           <h3 className="text-center text-ellipsis underline text-3xl sm:text-5xl font-bold  mx-auto">
@@ -213,6 +215,127 @@ function App() {
           </div>
         </section>
       </div>
+
+      <section
+        id="software"
+        aria-label="lista de softwares"
+        className="container-flex gap-15 min-h-screen sm:relative  min-w-screen bg-slate-50 shadow-2xl "
+      >
+        {/*this video is the background */}
+        <div
+          className="hidden sm:block min-h-screen w-[55vw] bg-cover absolute top-0 left-0"
+          style={{ backgroundImage: "url(/assets/bg-software.gif)" }}
+        />
+
+        <div className=" container min-h-screen sm:w-[45vw] sm:absolute sm:top-0 sm:right-0 mx-auto sm:p-10">
+          <div className="container-flex mx-auto my-auto  min-h-96">
+            <h3 className="font-bold text-4xl sm:text-7xl text-center ">
+              SOFTWARE
+            </h3>
+
+            <div className="p-4 sm:p-5">
+              <ul className="list-disc max-w-[95%] mx-auto">
+                {SoftList &&
+                  SoftList.map((data, int) => {
+                    return (
+                      <FadeIn
+                        from="bottom"
+                        positionOffset={50}
+                        triggerOffset={150}
+                        delayInMilliseconds={60 * int}
+                      >
+                        <li
+                          key={data.id}
+                          className="text-xl 2xl:mb-1 mb-0.5 p-0.5"
+                        >
+                          {" "}
+                          {data.name}
+                        </li>
+                      </FadeIn>
+                    );
+                  })}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="proyects"
+        aria-label="listado de proyectos"
+        className="container-flex gap-15 min-h-screen sm:relative  min-w-screen bg-zinc-900 bg-opacity-20  box-border "
+      >
+        <h3 className="font-bold text-4xl sm:text-7xl text-center py-5  ">
+          PROJECTOS
+        </h3>
+
+        <div className="carousel w-[95%] sm:w-5/6 bg-secondary-focus mx-auto h-[75vh] shadow-2xl ">
+          {ProyectList &&
+            ProyectList.map((data, int) => {
+              return (
+                <div
+                  id={"slide" + int}
+                  className="carousel-item anime relative w-full"
+                >
+                  <img
+                    src={data.imgUrl}
+                    class=" w-[70%] h-[30%] top-[12%] left-[15%] absolute mask  sm:w-full sm:min-h-full sm:static sm:blur-sm"
+                  />
+
+                  <div className="absolute bottom-6 max-h-[60%] flex flex-col p-5 text-white">
+                    <h4 className="font-extrabold text-2xl sm:text-5xl box-decoration-clone sm:mb-1.5">
+                      {data.name + " "}
+                      <span className="sm:text-xl sm:font-semibold">
+                        ({data.date})
+                      </span>
+                    </h4>
+                    <div className="text-lg sm:text-3xl font-bold">
+                      <span className="text-md sm:text-lg font-bold">para</span>
+                      {" " + data.client}.
+                    </div>
+                    <div className=" text-lg md:text-xl font-semibold">
+                      {data.desc}
+                    </div>
+                    <div className="md:text-lg font-semibold">
+                      Zona : {data.area}
+                    </div>
+                  </div>
+                  <div className="absolute anime flex justify-between left-0 right-0 sm:left-5 sm:right-5 sm:top-5">
+                    <a
+                      href={"#slide" + (int - 1)}
+                      className="btn sm:btn-circle "
+                    >
+                      ❮
+                    </a>
+                    <a
+                      href={"#slide" + (1 + int)}
+                      className="btn sm:btn-circle"
+                    >
+                      ❯
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
+        </div>
+      </section>
+
+      <section
+        id="allies"
+        aria-label="listado de aliados"
+        className="container-flex min-h-screen min-w-screen bg-white    box-border "
+      >
+        <h3 className="font-bold text-4xl sm:text-4xl text-center py-10 mb-5 bg-accent ">
+          EMPRESAS QUE CERTIFICAN NUESTRA CALIDAD
+        </h3>
+
+        <div className="flex flex-wrap max-w-[95%] max-h-[80%] mx-auto justify-center items-center">
+          {allies &&
+            allies.map((x) => {
+              return <img src={x.imgurl} className="m-4" />;
+            })}
+        </div>
+      </section>
     </div>
   );
 }
