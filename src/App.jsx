@@ -262,7 +262,7 @@ function App() {
 
       <section
         id="proyects"
-        aria-label="listado de proyectos"
+        aria-label="listado de projectos"
         className="container-flex gap-15 min-h-screen sm:relative  min-w-screen bg-zinc-900 bg-opacity-20  box-border "
       >
         <h3 className="font-bold text-4xl sm:text-7xl text-center py-5  ">
