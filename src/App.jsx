@@ -158,7 +158,7 @@ function App() {
           </h3>
 
           <div>
-            <div className="mx-auto my-auto grid sm:flex sm:grid-cols-2 gap-4">
+            <div className="mx-auto my-auto grid sm:grid-cols-2 gap-4">
               {ServiceList &&
                 ServiceList.map((data) => {
                   return (
