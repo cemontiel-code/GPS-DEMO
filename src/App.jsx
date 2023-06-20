@@ -153,7 +153,7 @@ function App() {
           aria-label="servicios"
           className="container gap-15 min-h-screen flex flex-col items-center p-4 sm:p-10 mx-auto h-full justify-around"
         >
-          <h3 className="text-center text-ellipsis underline text-3xl sm:text-5xl font-bold  mx-auto">
+          <h3 className="text-center text-ellipsis underline text-3xl sm:text-5xl font-bold  mx-auto uppercase">
             Lista de Servicios.
           </h3>
 
@@ -188,7 +188,7 @@ function App() {
           aria-label="lista de equipos "
           className="container gap-15 min-h-screen flex flex-col items-center p-4 sm:p-10 mx-auto h-full justify-around"
         >
-          <h3 className="text-center text-ellipsis underline text-3xl sm:text-5xl font-bold  mx-auto">
+          <h3 className="text-center text-ellipsis underline text-3xl sm:text-5xl font-bold  mx-auto capitalize">
             tecnologias a nuestra disposicion
           </h3>
 
