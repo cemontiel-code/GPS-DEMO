@@ -1,6 +1,22 @@
 [
   {
-    "id": "0",
+    "title": "GEOMATICA",
+    "Content": [
+      { "desc": "Levantamientos batimétricos." },
+      { "desc": "Estudios de corrientes, mareas, oleaje." },
+      { "desc": "Control de áreas críticas para la navegación." },
+      { "desc": "Determinación de cuencas." },
+      { "desc": "Inspecciones de Dragado." },
+      { "desc": "Asesoría técnica de obras hidráulicas." },
+      { "desc": "Inspecciones de dragado." },
+      { "desc": "Posicionamiento de embarcaciones." },
+      {
+        "desc": " Replanteo y apoyo a la construcción de plataformas marinas y terrestres"
+      }
+    ],
+    "imgURL": "../assets/hidrografia.jpg"
+  },
+  {
     "title": "HIDROGRAFIA",
     "Content": [
       { "desc": "Levantamientos batimétricos." },
@@ -37,7 +53,6 @@
     "imgURL": "../assets/topografia.jpg"
   },
   {
-    "id": "2",
     "title": "Geofísica y Sismica Marina",
     "Content": [
       { "desc": "Cartografía de áreas sumergidas con Side Scan Sonar." },
@@ -56,7 +71,6 @@
     "imgURL": "../assets/geofisica-marina.png"
   },
   {
-    "id": "3",
     "title": "Proyectos de Dragados : Inspeccion y Evaluacion",
     "Content": [
       { "desc": "Elaboracion de Proyectos de dragado." },
@@ -77,7 +91,6 @@
     "imgURL": "../assets/dragados.jpg"
   },
   {
-    "id": "4",
     "title": "Higiene y Ambiente",
     "Content": [
       {
@@ -106,7 +119,6 @@
     "imgURL": "../assets/ambiente.jpg"
   },
   {
-    "id": "5",
     "title": "Mantenimiento de obras civiles",
     "Content": [
       {

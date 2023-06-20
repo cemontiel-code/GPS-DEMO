@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BsChevronDoubleLeft } from "react-icons/bs";
 
-function Component({ children, icon, color, imgUrl, title }) {
+function Component({ children, imgUrl, title }) {
   const [active, setActive] = useState(false);
 
   function clickHandler() {

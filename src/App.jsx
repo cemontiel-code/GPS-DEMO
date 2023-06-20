@@ -11,9 +11,7 @@ import SoftList from "./data/software.json";
 import TechList from "./data/tech.json";
 import allies from "./data/allies.json";
 
-import { BsWater as Hidrografia } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
-import { MdMiscellaneousServices as Techno } from "react-icons/md";
 import { data } from "autoprefixer";
 
 function App() {
@@ -37,7 +35,7 @@ function App() {
         }}
       ></div>
 
-      <Hero></Hero>
+      <Hero />
 
       <svg
         viewBox="0 0 1320 300"
@@ -160,21 +158,19 @@ function App() {
           </h3>
 
           <div>
-            <div className="mx-auto my-auto  grid  sm:grid-cols-2 gap-4">
+            <div className="mx-auto my-auto grid sm:flex sm:grid-cols-2 gap-4">
               {ServiceList &&
                 ServiceList.map((data) => {
                   return (
                     <Component
-                      icon={<Hidrografia size={"48px"} />}
-                      color={"accent"}
                       key={data.id}
                       title={data.title}
                       imgUrl={data.imgURL}
                     >
                       <ul className="list-disc list-inside">
-                        {data.Content.map((x, i) => {
+                        {data.Content.map((x, int)  => {
                           return (
-                            <li className="text-xl " key={x.id}>
+                            <li className="text-xl " key={int}>
                               {x.desc}
                             </li>
                           );
@@ -201,9 +197,9 @@ function App() {
               TechList.map((data, x) => {
                 return (
                   <Component
-                    icon={<Techno />}
+                  
                     size={"48"}
-                    color={"primary"}
+                    
                     key={x}
                     title={data.name}
                     imgUrl={data.imgURL}

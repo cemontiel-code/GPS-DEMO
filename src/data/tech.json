@@ -66,12 +66,6 @@
     "qaunty": "1"
   },
   {
-    "name": "Embarcacion para trabajos Geofisicos",
-    "desc": "La empresa Cuenta con acuerdo comercial con empresaVenezolana INV para el uso de la embarcaion Hidrografica yGeofisica . Supply boat Lady Lee Espacio de ocupacion para 18 personas,trailer para almacenamiento de muestras, trailer para oficina y proceasamiento de data en campo.     Número IMO: 8334811 Nombre: LADY LEE Vessel Type - Generic: Other Vessel Type - Detailed: Tug/Supply Vessel Estado: Activo MMSI: 775334811 Identificativo de llamada: YYV2653 Bandera: Venezuela [VE] Arqueo bruto: 117 Eslora Total x Manga Máxima: 29 x 8 m Año de construcción: 1971",
-    "imgURL": "../equip/embarcacion.png",
-    "qaunty": "1"
-  },
-  {
     "name": "Receptores GPS en modalidades estáticos RTK Trimble",
     "desc": "Receptores 4000 SSI. Receptores 4700 Receptores DSM232 Receptores 4800 Receptores Agl con colectores de data",
     "imgURL": "../equip/Receptores-gps.png",
