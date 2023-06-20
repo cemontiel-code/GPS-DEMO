@@ -262,7 +262,7 @@ function App() {
         className="container-flex gap-15 min-h-screen sm:relative  min-w-screen bg-zinc-900 bg-opacity-20  box-border "
       >
         <h3 className="font-bold text-4xl sm:text-7xl text-center py-5  ">
-          PROJECTOS
+          PROYECTOS
         </h3>
 
         <div className="carousel w-[95%] sm:w-5/6 bg-secondary-focus mx-auto h-[75vh] shadow-2xl ">
@@ -279,7 +279,7 @@ function App() {
                   />
 
                   <div className="absolute bottom-6 max-h-[60%] flex flex-col p-5 text-white">
-                    <h4 className="font-extrabold text-2xl sm:text-5xl box-decoration-clone sm:mb-1.5">
+                    <h4 className="font-extrabold text-2xl sm:text-5xl box-decoration-clone sm:mb-1.5 capitalize">
                       {data.name + " "}
                       <span className="sm:text-xl sm:font-semibold">
                         ({data.date})
