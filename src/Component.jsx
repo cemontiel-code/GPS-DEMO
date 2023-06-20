@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BsChevronDoubleLeft } from "react-icons/bs";
 
-function Component({ children, imgUrl, title }) {
+function Component({ children, imgUrl, title, dni ,flexbasis}) {
   const [active, setActive] = useState(false);
 
   function clickHandler() {
@@ -15,14 +15,15 @@ function Component({ children, imgUrl, title }) {
         className={
           active
             ? "anime bg-center bg-fill hero min-h-screen open z-40"
-            : "btn btn-secondary h-20 space-around rounded-md anime relative overflow-hidden hover:scale-105 hover:shadow-2xl p-4"
+            : "btn btn-secondary h-24 m-1 space-around rounded-md anime relative overflow-hidden hover:scale-105 hover:shadow-2xl p-0.5 " +
+              flexbasis
         }
         style={
           active
             ? { backgroundImage: 'url("' + imgUrl + '")' }
             : { backgroundImage: "" }
         }
-        
+        id={dni}
         onClick={active ? "" : clickHandler}
       >
         {active ? (
@@ -36,7 +37,7 @@ function Component({ children, imgUrl, title }) {
             <div
               className={
                 active
-                  ? "anime hero-overlay bg-opacity-60 blur-sm"
+                  ? "anime hero-overlay bg-opacity-20 blur-sm"
                   : "anime closed"
               }
             ></div>
@@ -72,9 +73,9 @@ function Component({ children, imgUrl, title }) {
             <img
               alt={title}
               src={imgUrl}
-              className="absolute -left-5 object-left-top object-cover mask mask-hexagon-2 w-32 h-32 shadow-lg"
+              className="absolute -left-6 object-left-top object-cover mask mask-hexagon-2 w-36 h-36 "
             ></img>
-            <span className="text-lg text-secondary text-center ml-24">
+            <span className=" text-lg text-secondary ml-32  hyphens-auto  ">
               {title}
             </span>
           </>

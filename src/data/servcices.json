@@ -2,9 +2,9 @@
   {
     "title": "GEOMATICA",
     "Content": [
-      { "desc": "Levantamientos batimétricos." },
-      { "desc": "Estudios de corrientes, mareas, oleaje." },
-      { "desc": "Control de áreas críticas para la navegación." },
+      { "desc": "Mapas Togográficos." },
+      { "desc": "Cartografía Tematica" },
+      { "desc": "Aplicaciones de Percepción ."},
       { "desc": "Determinación de cuencas." },
       { "desc": "Inspecciones de Dragado." },
       { "desc": "Asesoría técnica de obras hidráulicas." },
@@ -14,7 +14,7 @@
         "desc": " Replanteo y apoyo a la construcción de plataformas marinas y terrestres"
       }
     ],
-    "imgURL": "https://lh3.googleusercontent.com/fife/APg5EOYDVBcwmgklH9saW4_7AcTHBURIUs-GvaI1eK0CZuhOTLOxOisGVU7WDMbtc3_i01W13kjBh6A06tksEqWcRjlaurRKcQ_TctmAh1He4MW0gRsfV6qAsxfhN9dzzIY8kNTuCalclbIXYuxyFw0dsQz4zZiOjz-V9SK8h65UQZQ-yCQutZ3sffM1xQ8o8pwOe7agy6o7Aj5JwDdp78Rio1qznI8qz7HM8PJYE7rPs8pE_mFUTKKTw5uBnwWFcheO4G2oCzaQMcUK38_VEcsITmcrjvPWTlcRpPQAl7le58E3zTYcCbCxN2KG0QLdITSf8X-au-EmG-Cjyn3LlvDwTfgl-U4rd1wq0TjXIty6mV_o5qHZhHA8V850oHp-iseMXWW02v6Dyratx9KIpS20gjHwN3MMM7QZfXb6DHoXNNvzF-lJcsaqpWP1b9-FrFgrLvrNSimm35FCke4IIDOi9VxlMKYnR4avHBW6QApEUMFZp3PkrfkdJXRMjW3PomgAiAeI49cIz7PU1HysZFDGGXdKieW7Dr57hWqwLm_jR96z4CGDuinE6MJDcyX1vAIFvgpHmJ88iEjN-UawynnA6llBGEvy_mhG9baveqYuAYL4egELrhKicVo9zKT_oWT3WvNQ1rEjEIAs03Q7gfa0p18zPJ3kD2ZuOjnyxdbd_Es7WzD1BwP3W3PPnbuPOhFIZZePBSVjgCZr6AhtslfV0RNgak57NccT0iTtvXpe287BZFQUbXlFh1dhiMsESOuX7j3D56tLOVAMWqMzkmDSsNztvM2AHBQ_WND42IBWPenh00yD2WtBqCQZOihi6QFHp9RVXjYFNChd611Z6HG6eiAfOR0vgLLmAlzfE7SwuX-KzYiPtORQhCUD9WRii7QA-ju6qmcaWnGqg6zTIy8JQ-nv7Kz_aNq_U9O0S_F3g0CJu4nFPh8BWVdIIpyd5HVuhOQV7uN6lA=w1440-h789.png"
+    "imgURL": "../assets/geomatica.png"
   },
   {
     "title": "HIDROGRAFIA",
@@ -31,7 +31,7 @@
         "desc": " Replanteo y apoyo a la construcción de plataformas marinas y terrestres"
       }
     ],
-    "imgURL": "../assets/hidrografia.jpg"
+    "imgURL": "../assets/hidrografia.png"
   },
   {
     "id": "1",
@@ -94,11 +94,11 @@
     "title": "Higiene y Ambiente",
     "Content": [
       {
-        "desc": "EEstudios de impacto ambiental de los procesos productivos para visualizar sus efectos sobre el entorno."
+        "desc": "Estudios de impacto ambiental de los procesos productivos para visualizar sus efectos sobre el entorno."
       },
       { "desc": "Formular proyectos ambientales desde su estudio de base.." },
       {
-        "desc": " Se encarga de los sistemas de gestión de calidad ambiental, salud y seguridad ocupacional del personal de la empresa."
+        "desc": "Sistemas de gestión de calidad ambiental, salud y seguridad ocupacional del personal de la empresa."
       },
       {
         "desc": "Establece métodos de control y vigilancia de la contaminación como sistemas de monitoreos, con la finalidad de minimizar emisiones y residuos."

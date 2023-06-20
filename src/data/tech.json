@@ -30,13 +30,13 @@
     "qaunty": "1"
   },
   {
-    "name": "Perfilometro (subottom profiler) 424",
+    "name": "Perfilometro 424",
     "desc": "The EdgeTech SB-424 towfish has a frequency range from 4 - 24 kHz. This towfish uses special designed transmitters with low Q-wide band characteristics best suited for “chirp” transmissions. Two multi element line array hydro-phones are installed in the tow vehicle to reduce acoustic scattering from the sides. This results in a narrower across/along track beam pattern. A linear power amplifier is used to generate clean, harmonic free transmissions. The portable 3100-P topside case contains the amplifier and other Full Spectrum electronics. A laptop computer running EdgeTech's DISCOVER software is where the sonar data is displayed and stored. A number of industry standard thermal gray shade printers are supported",
     "imgURL": "../equip/perfilmetro-424.png",
     "qaunty": "1"
   },
   {
-    "name": "Perfilometro (subottom profiler) 216",
+    "name": "Perfilometro 216",
     "desc": "the EdgeTech SB-216S towfish has a frequency range from 2-16 kHz. This towfish uses special designed transmitters with low Q-wide band characteristics best suited for “chirp”transmissions. Two multi element line array hydro-phones areinstalled in the tow vehicle to reduce acoustic scattering fromthe sides. This results in a narrower across/along track beampattern. A linear power amplifier is used to generate clean,harmonic free transmissions. . A laptop computer runningEdgeTech's DISCOVER software is where the sonar data isdisplayed and stored. A number of industry standard thermalgray shade printers are supported.",
     "imgURL": "../equip/perfilmetro-216.png",
     "qaunty": "1"
@@ -66,7 +66,7 @@
     "qaunty": "1"
   },
   {
-    "name": "Receptores GPS en modalidades estáticos RTK Trimble",
+    "name": "Receptores GPS estáticos - RTK Trimble",
     "desc": "Receptores 4000 SSI. Receptores 4700 Receptores DSM232 Receptores 4800 Receptores Agl con colectores de data",
     "imgURL": "../equip/Receptores-gps.png",
     "qaunty": "1"

@@ -71,7 +71,7 @@ function App() {
           className="container gap-15 min-h-screen flex flex-col items-center p-4 sm:p-10 mx-auto h-full justify-around"
         >
           {Records &&
-            Records.map((record) => {
+            Records.map((record, x) => {
               if (record.id == 1) {
                 return (
                   <FadeIn
@@ -79,6 +79,7 @@ function App() {
                     positionOffset={500}
                     triggerOffset={350}
                     delayInMilliseconds={380}
+                    key={x}
                   >
                     <div
                       id={"polt-" + record.id}
@@ -97,13 +98,14 @@ function App() {
                       </h2>
                       <div className="gap-5 my-3 sm:my-16 w-full sm:w-5/6 mx-auto">
                         {record.Content &&
-                          record.Content.map((data) => {
+                          record.Content.map((data, y) => {
                             return (
                               <FadeIn
                                 from="left"
                                 positionOffset={300}
                                 triggerOffset={350}
                                 delayInMilliseconds={380}
+                                key={y}
                               >
                                 <div
                                   key={data.id}
@@ -113,7 +115,7 @@ function App() {
                                     {data.title}
                                   </h3>
 
-                                  <p className="text-center text-lg mx-auto p-3 rounded-lg bg-white">
+                                  <p className="text-center text-lg mx-auto p-3 rounded-lg">
                                     {data.Content}
                                   </p>
                                   <div className="divider"> .</div>
@@ -158,26 +160,50 @@ function App() {
           </h3>
 
           <div>
-            <div className="mx-auto my-auto grid sm:grid-cols-2 gap-4">
+            <div className="mx-auto my-auto grid sm:flex flex-wrap justify-around sm:grid-cols-2 gap-3 w-[95%]">
               {ServiceList &&
-                ServiceList.map((data) => {
-                  return (
-                    <Component
-                      key={data.id}
-                      title={data.title}
-                      imgUrl={data.imgURL}
-                    >
-                      <ul className="list-disc list-inside">
-                        {data.Content.map((x, int)  => {
-                          return (
-                            <li className="text-xl " key={int}>
-                              {x.desc}
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </Component>
-                  );
+                ServiceList.map((data, int) => {
+                  if (int == 0) {
+                    return (
+                      <Component
+                        dni={int}
+                        title={data.title}
+                        imgUrl={data.imgURL}
+                        flexbasis={"sm:flex-initial w-[54%]"}
+                        key={int}
+                      >
+                        <ul className="list-disc list-inside">
+                          {data.Content.map((x, int) => {
+                            return (
+                              <li className="text-xl " key={int}>
+                                {x.desc}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </Component>
+                    );
+                  } else {
+                    return (
+                      <Component
+                        key={int}
+                        dni={int}
+                        title={data.title}
+                        imgUrl={data.imgURL}
+                        flexbasis={"sm:flex-initial w-[48%]"}
+                      >
+                        <ul className="list-disc list-inside">
+                          {data.Content.map((x, int) => {
+                            return (
+                              <li className="text-xl " key={int}>
+                                {x.desc}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </Component>
+                    );
+                  }
                 })}
             </div>
           </div>
@@ -189,20 +215,18 @@ function App() {
           className="container gap-15 min-h-screen flex flex-col items-center p-4 sm:p-10 mx-auto h-full justify-around"
         >
           <h3 className="text-center text-ellipsis underline text-3xl sm:text-5xl font-bold  mx-auto capitalize">
-            tecnologias a nuestra disposicion
+            tecnologías a nuestra disposición
           </h3>
 
-          <div className="mx-auto my-10 text-center grid sm:grid-cols-3 gap-4">
+          <div className="mx-auto my-10 grid sm:flex flex-wrap justify-around sm:grid-cols-3  w-[95%]">
             {TechList &&
               TechList.map((data, x) => {
                 return (
                   <Component
-                  
-                    size={"48"}
-                    
                     key={x}
                     title={data.name}
                     imgUrl={data.imgURL}
+                    flexbasis={"sm:flex-initial w-[32%]"}
                   >
                     <p className="text-xl text-center ">{data.desc}</p>
                   </Component>
@@ -215,7 +239,7 @@ function App() {
       <section
         id="software"
         aria-label="lista de softwares"
-        className="container-flex gap-15 min-h-screen sm:relative  min-w-screen bg-slate-50 shadow-2xl "
+        className="container-flex gap-15 min-h-screen sm:relative  min-w-screen bg-slate-50 shadow-2xl hidden"
       >
         {/*this video is the background */}
         <div
@@ -259,13 +283,13 @@ function App() {
       <section
         id="proyects"
         aria-label="listado de projectos"
-        className="container-flex gap-15 min-h-screen sm:relative  min-w-screen bg-zinc-900 bg-opacity-20  box-border "
+        className="container-flex min-h-screen sm:relative  min-w-screen box-border "
       >
-        <h3 className="font-bold text-4xl sm:text-7xl text-center py-5  ">
+        <h3 className="font-bold text-4xl sm:text-7xl text-center py-10  ">
           PROYECTOS
         </h3>
 
-        <div className="carousel w-[95%] sm:w-5/6 bg-secondary-focus mx-auto h-[75vh] shadow-2xl ">
+        <div className="carousel w-[95%] sm:w-5/6 bg-secondary-focus mx-auto h-[80vh] shadow-2xl mb-14">
           {ProyectList &&
             ProyectList.map((data, int) => {
               return (
@@ -275,7 +299,7 @@ function App() {
                 >
                   <img
                     src={data.imgUrl}
-                    class=" w-[70%] h-[30%] top-[12%] left-[15%] absolute mask  sm:w-full sm:min-h-full sm:static sm:blur-sm"
+                    className=" w-[70%] h-[30%] top-[12%] left-[15%] absolute mask  sm:w-full sm:min-h-full sm:static sm:blur-sm"
                   />
 
                   <div className="absolute bottom-6 max-h-[60%] flex flex-col p-5 text-white">
@@ -319,16 +343,16 @@ function App() {
       <section
         id="allies"
         aria-label="listado de aliados"
-        className="container-flex min-h-screen min-w-screen bg-white    box-border "
+        className="container-flex min-h-screen min-w-screen bg-white box-border "
       >
-        <h3 className="font-bold text-4xl sm:text-4xl text-center py-10 mb-5 bg-accent ">
-          EMPRESAS QUE CERTIFICAN NUESTRA CALIDAD
+        <h3 className="font-bold text-4xl sm:text-6xl text-center py-10 mb-5 bg-accent uppercase ">
+          nuestros clientes
         </h3>
 
-        <div className="flex flex-wrap max-w-[95%] max-h-[80%] mx-auto justify-center items-center">
+        <div className="flex flex-wrap max-w-[92%] max-h-[80%] mx-auto justify-center items-center">
           {allies &&
             allies.map((x) => {
-              return <img src={x.imgurl} className="m-4" />;
+              return <img src={x.imgurl} className="m-8 h-18" />;
             })}
         </div>
       </section>
