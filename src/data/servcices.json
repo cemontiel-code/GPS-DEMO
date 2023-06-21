@@ -4,15 +4,9 @@
     "Content": [
       { "desc": "Mapas Togográficos." },
       { "desc": "Cartografía Tematica" },
-      { "desc": "Aplicaciones de Percepción ."},
-      { "desc": "Determinación de cuencas." },
-      { "desc": "Inspecciones de Dragado." },
-      { "desc": "Asesoría técnica de obras hidráulicas." },
-      { "desc": "Inspecciones de dragado." },
-      { "desc": "Posicionamiento de embarcaciones." },
-      {
-        "desc": " Replanteo y apoyo a la construcción de plataformas marinas y terrestres"
-      }
+      { "desc": "Aplicaciones de Percepción Remota en agricultura, medio ambiente, hidrologia, forestal, geologia y desastres naturales."},
+      { "desc": "Catastro ,gestión de territorio, uso de suelo, valuación." },
+      { "desc": "Gestión de datos espaciales en agricultura, geografia, medio ambiente, hidrologia, forestal, geologia, geofisica, ingenieria civil y biologia." }
     ],
     "imgURL": "../assets/geomatica.png"
   },
@@ -25,7 +19,7 @@
       { "desc": "Determinación de cuencas." },
       { "desc": "Inspecciones de Dragado." },
       { "desc": "Asesoría técnica de obras hidráulicas." },
-      { "desc": "Inspecciones de dragado." },
+      { "desc": "Proyectos de Dragado con Volumetrias." },
       { "desc": "Posicionamiento de embarcaciones." },
       {
         "desc": " Replanteo y apoyo a la construcción de plataformas marinas y terrestres"
@@ -101,16 +95,16 @@
         "desc": "Sistemas de gestión de calidad ambiental, salud y seguridad ocupacional del personal de la empresa."
       },
       {
-        "desc": "Establece métodos de control y vigilancia de la contaminación como sistemas de monitoreos, con la finalidad de minimizar emisiones y residuos."
+        "desc": "Establecer métodos de control y vigilancia de la contaminación como sistemas de monitoreos, con la finalidad de minimizar emisiones y residuos."
       },
       {
-        "desc": "Desarrolla, calcula y pone en práctica las diferentes soluciones técnicas que minimicen los efectos negativos del proceso industrial sobre el medio ambiente."
+        "desc": "Desarrollar, Calcular y Poner en práctica las diferentes soluciones técnicas que minimicen los efectos negativos del proceso industrial sobre el medio ambiente."
       },
       {
-        "desc": "Diseña o selecciona los equipos e instalaciones de tratamiento de materiales de desecho gaseosos, líquidos y sólidos, llevando a cabo su seguimiento y control."
+        "desc": "Diseñar o seleccionar los equipos e instalaciones de tratamiento de materiales de desecho gaseosos, líquidos y sólidos, llevando a cabo su seguimiento y control."
       },
       {
-        "desc": "Determina las medidas de mitigación que deben realizarse para contrarrestar las emisiones emitidas."
+        "desc": "Determinar las acciiones para la mitigación que deben realizarse para contrarrestar las emisiones emitidas."
       },
       {
         "desc": "Lleva a cabo evaluación de proyectos y asesoría legal a empresas."

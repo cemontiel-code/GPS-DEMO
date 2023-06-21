@@ -72,9 +72,21 @@
     "qaunty": "1"
   },
   {
-    "name": "ESTACIONES TOPOGRAFICAS SOKKIA STE 610 PRIMLESS",
-    "desc": "",
+    "name": "ESTACIONES DE TOPOGRAFIA CLÁSICA",
+    "desc": "ESTACIONES TOTALES PRIMLESS, NIVLES ÓPTICOS,NIVELES DE PRECISIÓN Y MIRAS",
     "imgURL": "../equip/estaciones.png",
     "qaunty": "3"
+  },
+  {
+    "name": "SENSORES LIDAR",
+    "desc": "SLAND HANDHELD 3D - GEOSUN GS-100V DJI MATRICE 300",
+    "imgURL": "../equip/lidar-min.jpg",
+    "qaunty": "1"
+  },
+  {
+    "name": "GNSS DE DOBLE FRECUENCIA",
+    "desc": "SOUHT GALAXY G2 SOUHT G7 Data Controllers H6",
+    "imgURL": "../equip/GNSS-min.png",
+    "qaunty": "1"
   }
 ]

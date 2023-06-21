@@ -73,7 +73,7 @@ function Component({ children, imgUrl, title, dni ,flexbasis}) {
             <img
               alt={title}
               src={imgUrl}
-              className="absolute -left-6 object-left-top object-cover mask mask-hexagon-2 w-36 h-36 "
+              className="absolute -left-6 object-center object-cover mask mask-hexagon-2 w-36 h-36 "
             ></img>
             <span className=" text-lg text-secondary ml-32  hyphens-auto  ">
               {title}

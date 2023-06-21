@@ -10,7 +10,7 @@ import { RiGpsLine } from "react-icons/ri";*/
 
 function Hero() {
   const [Active, setActive] = useState(false);
-  
+
   /*
   const [scrollPositionY, setScrollPositionY] = useState(0);
   const getScrollPostionY = () => {
@@ -43,14 +43,13 @@ function Hero() {
             <img
               src={gpsLogo}
               alt="gps.logo.png"
-              className="w-48 sm:w-5/6 sm:my-auto mx-auto"
+              className="w-40 sm:w-5/6 sm:my-auto mx-auto"
             />
           </div>
           <div className="hidden sm:block container-flex absolute left-1/2">
             <h1 className="sm:text-5xl font-bold w-2/3 text-center italic text-white capitalize  ">
               <span className="">
-                ''productivo, garantizando de esta forma empeñamos al
-                mejoramiento continuo de nuestros procesos y sistema''
+                SOLUCIONES GEOMATICAS AL SERVICIO DE LA INGENIERIA 
               </span>
             </h1>
           </div>
