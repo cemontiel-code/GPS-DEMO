@@ -1,4 +1,4 @@
-import gpsLogo from "/logo.png";
+import gpsLogo from "/logo GPS.png";
 import "./App.css";
 
 import { useState, useEffect } from "react";
