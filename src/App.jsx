@@ -116,7 +116,7 @@ function App() {
                                     {data.title}
                                   </h3>
 
-                                  <p className="text-center text-lg mx-auto p-3 rounded-lg">
+                                  <p className="text-center text-lg sm:text-2xl  mx-auto p-3 rounded-lg">
                                     {data.Content}
                                   </p>
                                   <div className="divider"> .</div>
